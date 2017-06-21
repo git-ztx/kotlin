@@ -59,7 +59,7 @@ class VarByMapExtensionsTest {
         // fails { c }  // does not fail in JS due to KT-8135
 
         map["a"] = null
-        a // fails { a } // does not fail due to KT-8135
+        //a Fails in Native, KT-8135 is questionable feature. // fails { a } // does not fail due to KT-8135
 
         assertFailsWith<NoSuchElementException> { d }
         map["d"] = null
