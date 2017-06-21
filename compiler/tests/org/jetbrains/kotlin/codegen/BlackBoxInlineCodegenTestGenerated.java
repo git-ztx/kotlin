@@ -556,6 +556,12 @@ public class BlackBoxInlineCodegenTestGenerated extends AbstractBlackBoxInlineCo
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/boxInline/argumentOrder/varargAndDefaultParameters.kt");
             doTest(fileName);
         }
+
+        @TestMetadata("varargAndDefaultParameters_ForNative.kt")
+        public void testVarargAndDefaultParameters_ForNative() throws Exception {
+            String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/boxInline/argumentOrder/varargAndDefaultParameters_ForNative.kt");
+            doTest(fileName);
+        }
     }
 
     @TestMetadata("compiler/testData/codegen/boxInline/arrayConvention")
